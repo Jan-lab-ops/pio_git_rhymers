@@ -11,7 +11,7 @@ public class DefaultCountingOutRhymer {
         return total;
     }
 
-    public int total = EMPTY_STACK_VALUE;
+    private int total = EMPTY_STACK_VALUE;
 
     public void countIn(int in) {
         if (!isFull())
@@ -38,4 +38,7 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
