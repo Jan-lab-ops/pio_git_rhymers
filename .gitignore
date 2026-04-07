@@ -1,0 +1,7 @@
+# Środowisko IntelliJ IDEA
+.idea/
+*.iml
+
+# Foldery budowania projektu (Maven/Java)
+target/
+bin/
