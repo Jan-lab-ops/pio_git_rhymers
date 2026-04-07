@@ -1,5 +1,11 @@
 package edu.kis.vh.nursery;
 
+/**
+ *
+ *Klasa implementująca
+ *
+ */
+
 public class DefaultCountingOutRhymer {
 
     private static final int SIZE = 12;
@@ -13,6 +19,11 @@ public class DefaultCountingOutRhymer {
 
     private int total = EMPTY_STACK_VALUE;
 
+    /**
+     *dodawania nowej liczby
+     *
+      * @param in
+     */
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
@@ -32,6 +43,10 @@ public class DefaultCountingOutRhymer {
         return numbers[total];
     }
 
+    /**
+     *wyciąganie liczby ze stosu
+     * @return
+     */
     public int countOut() {
         if (callCheck())
             return EMPTY_STACK_VALUE;
